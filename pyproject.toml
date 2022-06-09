@@ -13,9 +13,12 @@ prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
+jupyter = "^1.0.0"
+notebook = "^6.4.11"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
