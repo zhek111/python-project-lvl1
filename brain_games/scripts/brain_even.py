@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from greeting import welcome_user
-from logic_games import parity_check
+from brain_games.greeting import welcome_user
+from brain_games.logic_games import parity_check
 
 
 def main():

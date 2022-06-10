@@ -1,6 +1,6 @@
 from random import randint
 from prompt import string
-from greeting import name
+from brain_games.greeting import name
 
 
 def parity_check():
@@ -27,4 +27,4 @@ def parity_check():
             print(f"Let's try again,{name}")
             i = 1
             random_number = randint(1, 100)
-    print(f'Congratulations, {name}!')
+    return(f'Congratulations, {name}!')
