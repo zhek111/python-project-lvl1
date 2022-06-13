@@ -1,6 +1,6 @@
 from random import randint
-from prompt import string
-from brain_games.greeting import name
+from brain_games import general_logic_games
+from games.greeting import name
 
 
 def parity_check():
