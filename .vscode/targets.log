@@ -1,3 +1,4 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -6,7 +7,7 @@
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Fri Jun  3 13:57:00 2022
+# Make data base, printed on Mon Jun 13 14:28:37 2022
 
 # Variables
 
@@ -39,7 +40,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/mx/8rh6bl0d76z58y4dc4d8hf_r0000gn/T/vscode-ipc-69535485-d2c8-4603-bba0-4abea736c0ac.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/mx/8rh6bl0d76z58y4dc4d8hf_r0000gn/T/vscode-ipc-7b34b8b2-f944-4918-b1b2-723774b9f27d.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -51,7 +52,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.K21KJYJs2D/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.UBnmnF8Rdt/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -141,7 +142,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 41047
+VSCODE_PID = 603
 # variable set hash-table stats:
 # Load=66/1024=6%, Rehash=0, Collisions=1/89=1%
 
@@ -151,9 +152,9 @@ VSCODE_PID = 41047
 
 # Directories
 
-# . (device 16777232, inode 2398200): 13 files, no impossibilities.
+# . (device 16777231, inode 2398200): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -165,8 +166,8 @@ package-install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 14):
-	python3 -m pip install --user dist/*.whl
+#  commands to execute (from `Makefile', line 17):
+	python3 -m pip install --user --force-reinstall  dist/*.whl
 	
 
 # Not a target:
@@ -195,7 +196,7 @@ brain-games:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:28:03
+#  Last modified 2022-06-09 12:00:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -205,7 +206,7 @@ build:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 8):
+#  commands to execute (from `Makefile', line 11):
 	poetry build
 	
 
@@ -215,12 +216,36 @@ build:
 #  Modification time never checked.
 #  File has not been updated.
 
+brain-even:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 8):
+	poetry run brain-even
+	
+
 publish:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 11):
+#  commands to execute (from `Makefile', line 14):
 	poetry publish --dry-run
+	
+
+make:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 20):
+	poetry run flake8 brain_games
+	
+
+lint:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 20):
+	poetry run flake8 brain_games
 	
 
 install:
@@ -232,7 +257,7 @@ install:
 	
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/24=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -244,7 +269,7 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jun  3 13:57:00 2022
+# Finished Make data base on Mon Jun 13 14:28:37 2022
 
  
 make: *** No rule to make target `all'.  Stop.

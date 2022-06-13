@@ -1,7 +1,7 @@
 from prompt import string
 from random import randint
 from random import choice
-from brain_games.games.greeting import name
+from brain_games.games.greeting_calc import name
 
 
 def games():
