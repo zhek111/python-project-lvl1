@@ -1,9 +1,10 @@
+from prompt import string
 from random import randint
-from brain_games import general_logic_games
 from games.greeting import name
+manual = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def parity_check():
+def games():
     random_number = randint(1, 100)
     i = 1
     while i <= 3:

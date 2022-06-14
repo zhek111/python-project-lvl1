@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from brain_games.games.greeting import welcome_user
-from brain_games.games.calc_games import games, manual
+from brain_games.games.gcd_games import games, manual
 
 
 def main():

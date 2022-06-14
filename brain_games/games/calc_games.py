@@ -1,7 +1,8 @@
 from prompt import string
 from random import randint
 from random import choice
-from brain_games.games.greeting_calc import name
+from brain_games.games.greeting import name
+manual = 'What is the result of the expression?'
 
 
 def games():
