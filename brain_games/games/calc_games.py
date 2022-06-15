@@ -42,7 +42,8 @@ def games():
             question = randon_example[0]
             correct_answer = randon_example[1]
         elif str(correct_answer) != (answer):
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was "
+                  f"'{correct_answer}'")
             print(f"Let's try again,{name}")
             i = 1
             random_number1 = randint(1, 100)
