@@ -1,6 +1,6 @@
 from prompt import string
 from random import randint
-from games.greeting import name
+from brain_games.games.greeting import name
 manual = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
