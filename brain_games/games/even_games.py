@@ -20,12 +20,8 @@ def games():
             random_number = randint(1, 100)
         elif random_number % 2 == 0 and answer != 'yes':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
-            print(f"Let's try again,{name}")
-            i = 1
-            random_number = randint(1, 100)
+            return (f"Let's try again,{name}")
         elif random_number % 2 != 0 and answer != 'no':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again,{name}")
-            i = 1
-            random_number = randint(1, 100)
+            return (f"Let's try again,{name}")
     return(f'Congratulations, {name}!')
