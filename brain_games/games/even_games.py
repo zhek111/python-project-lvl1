@@ -24,3 +24,4 @@ def games():
         elif random_number % 2 != 0 and answer != 'no':
             print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
             return (f"Let's try again, {name}")
+    return(f'Congratulations, {name}!')
