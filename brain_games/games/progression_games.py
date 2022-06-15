@@ -16,7 +16,9 @@ def games():
     text = (str(progression))
     text2 = (text.replace("'", ""))
     text3 = (text2.replace(",", ""))
-    question = text3
+    text4 = (text3.replace("]", ""))
+    text5 = (text4.replace("[", ""))
+    question = text5
     i = 1
     while i <= 3:
         print(f'Question: {question}')
@@ -36,7 +38,9 @@ def games():
             text = (str(progression))
             text2 = (text.replace("'", ""))
             text3 = (text2.replace(",", ""))
-            question = text3
+            text4 = (text3.replace("]", ""))
+            text5 = (text4.replace("[", ""))
+            question = text5
         elif str(correct_answer) != (answer):
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'")

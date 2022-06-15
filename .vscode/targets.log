@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Mon Jun 13 14:28:37 2022
+
+# Make data base, printed on Wed Jun 15 16:27:00 2022
 
 # Variables
 
@@ -28,7 +31,7 @@ CURDIR := /Users/evgeny/python-project-lvl1
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"6c87e287770fa80b3245e0a037b935fb.ru","_translationsConfigFile":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/tcf.json","_cacheRoot":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru","_resolvedLanguagePackCoreLocation":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"6c87e287770fa80b3245e0a037b935fb.ru","_translationsConfigFile":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/tcf.json","_cacheRoot":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru","_resolvedLanguagePackCoreLocation":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/Users/evgeny/Library/Application Support/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
@@ -40,7 +43,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/mx/8rh6bl0d76z58y4dc4d8hf_r0000gn/T/vscode-ipc-7b34b8b2-f944-4918-b1b2-723774b9f27d.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/mx/8rh6bl0d76z58y4dc4d8hf_r0000gn/T/vscode-ipc-53c5d05b-5974-4a89-8a7f-a3a0b28a4327.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -72,7 +75,7 @@ HOME = /Users/evgeny
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/evgeny/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /Users/evgeny/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LOGNAME = evgeny
 # environment
@@ -106,7 +109,7 @@ TMPDIR = /var/folders/mx/8rh6bl0d76z58y4dc4d8hf_r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/evgeny/Library/Application Support/Code/1.67.2-main.sock
+VSCODE_IPC_HOOK = /Users/evgeny/Library/Application Support/Code/1.68.0-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -114,7 +117,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.386339.386740
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.3524235.3524242
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -142,7 +145,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 603
+VSCODE_PID = 26133
 # variable set hash-table stats:
 # Load=66/1024=6%, Rehash=0, Collisions=1/89=1%
 
@@ -269,8 +272,6 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jun 13 14:28:37 2022
+# Finished Make data base on Wed Jun 15 16:27:00 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-
