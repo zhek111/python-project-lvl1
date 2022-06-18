@@ -25,3 +25,5 @@ def caclulation():
     text5 = (text4.replace("[", ""))
     question = text5
     return(question, answer)
+
+print(caclulation())

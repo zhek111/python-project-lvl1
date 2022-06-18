@@ -1,4 +1,4 @@
-from is_prime import is_prime
+from brain_games.games.is_prime import is_prime
 from random import randint
 manual = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
