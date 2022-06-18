@@ -2,7 +2,7 @@ from prompt import string
 name = string('May I have your name? ')
 
 
-def games(manual, question, answer):
+def games(manual, caclulation):
     print(f'Hello, {name}!\n{manual}')
     i = 1
     numbers_cycles = 3

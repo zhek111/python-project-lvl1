@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-from brain_games.games.greeting import welcome_user
-from brain_games.games.calc_games import games, manual
+from brain_games.games.logic_games import games
+from brain_games.games.calc_games import manual, caclulation
 
 
 def main():
-    print(welcome_user(manual))
-    print(games())
+    print(games(manual, caclulation))
 
 
 if __name__ == '__main__':
