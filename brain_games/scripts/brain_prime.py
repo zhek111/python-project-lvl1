@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-from brain_games.games.logic_games import games
-from brain_games.games.prime_games import manual, caclulation
+from brain_games.games import prime_games
 
 
 def main():
-    print(games(manual, caclulation))
+    prime_games
 
 
 if __name__ == '__main__':

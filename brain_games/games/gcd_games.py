@@ -1,16 +1,17 @@
 from random import randint
 from math import gcd
-manual = 'Find the greatest common divisor of given numbers.'
+from brain_games.games.logic_games import tune
+MANUAL = 'Find the greatest common divisor of given numbers.'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def caclulation():
-    start_number = 1
-    end_number = 100
-    random_number1 = randint(start_number, end_number)
-    random_number2 = randint(start_number, end_number)
-    example1 = (f'{random_number1} {random_number2}')
-    answer1 = gcd(random_number1, random_number2)
-    list = [example1, answer1]
-    question = list[0]
-    answer = list[1]
-    return(question, answer)
+def calculate():
+    random_number1 = randint(MIN_NUMBER, MAX_NUMBER)
+    random_number2 = randint(MIN_NUMBER, MAX_NUMBER)
+    question = (f'{random_number1} {random_number2}')
+    answer = gcd(random_number1, random_number2)
+    return(question, answer, MANUAL)
+
+
+print(tune(calculate))

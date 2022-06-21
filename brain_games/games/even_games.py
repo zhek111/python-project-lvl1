@@ -1,11 +1,15 @@
 from random import randint
-manual = 'Answer "yes" if the number is even, otherwise answer "no".'
+from brain_games.games.logic_games import tune
+MANUAL = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def caclulation():
-    start_number = 1
-    end_number = 100
-    random_number = randint(start_number, end_number)
+def calculate():
+    random_number = randint(MIN_NUMBER, MAX_NUMBER)
     question = random_number
     answer = random_number % 2 == 0 and 'yes' or 'no'
-    return(question, answer)
+    return(question, answer, MANUAL)
+
+
+print(tune(calculate))

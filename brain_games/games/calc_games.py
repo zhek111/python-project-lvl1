@@ -1,23 +1,23 @@
 from random import randint
 from random import choice
-manual = 'What is the result of the expression?'
+from brain_games.games.logic_games import tune
+MANUAL = 'What is the result of the expression?'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def caclulation():
-    start_number = 1
-    end_number = 100
-    random_number1 = randint(start_number, end_number)
-    random_number2 = randint(start_number, end_number)
-    example1 = (f'{random_number1} + {random_number2}')
-    answer1 = random_number1 + random_number2
-    list1 = [example1, answer1]
-    example2 = (f'{random_number1} - {random_number2}')
-    answer2 = random_number1 - random_number2
-    list2 = [example2, answer2]
-    example3 = (f'{random_number1} * {random_number2}')
-    answer3 = random_number1 * random_number2
-    list3 = [example3, answer3]
-    randon_example = choice([list1, list2, list3])
-    question = randon_example[0]
-    answer = randon_example[1]
-    return(question, answer)
+def calculate():
+    random_number1 = randint(MIN_NUMBER, MAX_NUMBER)
+    random_number2 = randint(MIN_NUMBER, MAX_NUMBER)
+    random_operator = choice(['*', '+', '-'])
+    if random_operator == '*':
+        answer = random_number1 * random_number2
+    elif random_operator == '+':
+        answer = random_number1 + random_number2
+    elif random_operator == '-':
+        answer = random_number1 - random_number2
+    question = (f'{random_number1} {random_operator} {random_number2}')
+    return(question, answer, MANUAL)
+
+
+print(tune(calculate))
