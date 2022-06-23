@@ -1,6 +1,5 @@
 from random import randint
 from random import choice
-from brain_games.games.logic_games import tune
 MANUAL = 'What is the result of the expression?'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
