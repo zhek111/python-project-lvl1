@@ -18,6 +18,3 @@ def calculate():
         answer = random_number1 - random_number2
     question = (f'{random_number1} {random_operator} {random_number2}')
     return(question, answer, MANUAL)
-
-
-print(tune(calculate))

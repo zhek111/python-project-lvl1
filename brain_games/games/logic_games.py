@@ -15,7 +15,9 @@ def tune(calculate):
             i = i + 1
             (question, answer, MANUAL) = calculate()
         elif your_answer != str(answer):
-            return(f"'{your_answer}' is wrong answer ;(. "
-                   f"Correct answer was '{answer}'\n"
-                   f"Let's try again, {name}!")
-    return(f'Congratulations, {name}!')
+            print(f"'{your_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{answer}'\n"
+                  f"Let's try again, {name}!")
+            return False
+    print(f'Congratulations, {name}!')
+    return True

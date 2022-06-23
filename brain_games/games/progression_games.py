@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.games.logic_games import tune
 MANUAL = 'What number is missing in the progression?'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
@@ -19,15 +18,8 @@ def caclulate():
     random_number = (randint(FIRST_ELEMENT_PROGRESSION, number_steps - 1))
     answer = progression[random_number]
     progression[random_number] = '..'
-
-    def corr_str():
-        question = ''
-        for number in progression:
-            question = question + str(number) + " "
-        return question
-    question = corr_str()
+    question = ''
+    for number in progression:
+        question = question + str(number) + " "
     question = question.strip()
     return(question, answer, MANUAL)
-
-
-print(tune(caclulate))

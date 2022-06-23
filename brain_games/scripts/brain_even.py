@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-from brain_games.games import even_games
+from brain_games.games.even_games import calculate
+from brain_games.games.logic_games import tune
 
 
 def main():
-    even_games
+    tune(calculate)
 
 
 if __name__ == '__main__':

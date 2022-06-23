@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-from brain_games.games import progression_games
+from brain_games.games.prime_games import calculate
+from brain_games.games.progression_games import tune
 
 
 def main():
-    progression_games
+    tune(calculate)
 
 
 if __name__ == '__main__':
