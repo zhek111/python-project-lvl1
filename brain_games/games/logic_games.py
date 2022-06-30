@@ -16,7 +16,8 @@ def play_game(module):
             i = i + 1
             (question, answer) = module.generate_round_game()
         else:
-            return(f"'{your_answer}' is wrong answer ;(. "
-                   f"Correct answer was '{answer}'\n"
-                   f"Let's try again, {name}!")
+            print(f"'{your_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{answer}'\n"
+                  f"Let's try again, {name}!")
+            return False
     print(f'Congratulations, {name}!')
