@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from brain_games.games.progression_games import caclulate
-from brain_games.games.logic_games import tune
+from brain_games.games import progression_games
+from brain_games.games.logic_games import play_game
 
 
 def main():
-    tune(caclulate)
+    play_game(progression_games)
 
 
 if __name__ == '__main__':

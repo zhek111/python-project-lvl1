@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from brain_games.games.gcd_games import calculate
-from brain_games.games.logic_games import tune
+from brain_games.games import gcd_games
+from brain_games.games.logic_games import play_game
 
 
 def main():
-    tune(calculate)
+    play_game(gcd_games)
 
 
 if __name__ == '__main__':

@@ -9,7 +9,7 @@ MAX_NUMBER_STEPS = 10
 FIRST_ELEMENT_PROGRESSION = 0
 
 
-def caclulate():
+def generate_round_game():
     start_progression = randint(MIN_NUMBER, MAX_NUMBER)
     step = randint(MIN_STEP, MAX_STEP)
     number_steps = randint(MIN_NUMBER_STEPS, MAX_NUMBER_STEPS)
@@ -22,4 +22,4 @@ def caclulate():
     for number in progression:
         question = question + str(number) + " "
     question = question.strip()
-    return(question, answer, MANUAL)
+    return(question, answer)

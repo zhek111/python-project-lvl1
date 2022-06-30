@@ -1,4 +1,5 @@
 from prompt import string
+CYCLES_COUNT = 3
 
 
 def play_game(module):
@@ -7,16 +8,15 @@ def play_game(module):
     (question, answer) = module.generate_round_game()
     print(f'Hello, {name}!\n{MANUAL}')
     i = 1
-    numbers_cycles = 3
-    while i <= numbers_cycles:
+    while i <= CYCLES_COUNT:
         print(f'Question: {question}')
         your_answer = string('Your answer:  ')
         if your_answer == str(answer):
             print('Correct!')
             i = i + 1
             (question, answer) = module.generate_round_game()
-        elif your_answer != str(answer):
-            print(f"'{your_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{answer}'\n"
-                  f"Let's try again, {name}!")
+        else:
+            return(f"'{your_answer}' is wrong answer ;(. "
+                   f"Correct answer was '{answer}'\n"
+                   f"Let's try again, {name}!")
     print(f'Congratulations, {name}!')
