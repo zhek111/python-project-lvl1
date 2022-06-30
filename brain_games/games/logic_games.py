@@ -1,5 +1,5 @@
 from prompt import string
-import calc_games
+
 
 def play_game(module):
     name = string('May I have your name? ')
@@ -19,9 +19,4 @@ def play_game(module):
             print(f"'{your_answer}' is wrong answer ;(. "
                   f"Correct answer was '{answer}'\n"
                   f"Let's try again, {name}!")
-            return False
     print(f'Congratulations, {name}!')
-    return True
-
-
-print(play_game(calc_games))
