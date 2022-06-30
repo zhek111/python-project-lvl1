@@ -1,9 +1,10 @@
 from prompt import string
+import calc_games
 
-
-def tune(calculate):
+def play_game(module):
     name = string('May I have your name? ')
-    (question, answer, MANUAL) = calculate()
+    MANUAL = module.MANUAL
+    (question, answer) = module.generate_round_game()
     print(f'Hello, {name}!\n{MANUAL}')
     i = 1
     numbers_cycles = 3
@@ -13,7 +14,7 @@ def tune(calculate):
         if your_answer == str(answer):
             print('Correct!')
             i = i + 1
-            (question, answer, MANUAL) = calculate()
+            (question, answer) = module.generate_round_game()
         elif your_answer != str(answer):
             print(f"'{your_answer}' is wrong answer ;(. "
                   f"Correct answer was '{answer}'\n"
@@ -21,3 +22,6 @@ def tune(calculate):
             return False
     print(f'Congratulations, {name}!')
     return True
+
+
+print(play_game(calc_games))

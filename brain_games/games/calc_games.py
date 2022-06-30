@@ -5,7 +5,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 
-def calculate():
+def generate_round_game():
     random_number1 = randint(MIN_NUMBER, MAX_NUMBER)
     random_number2 = randint(MIN_NUMBER, MAX_NUMBER)
     random_operator = choice(['*', '+', '-'])
@@ -16,4 +16,4 @@ def calculate():
     elif random_operator == '-':
         answer = random_number1 - random_number2
     question = (f'{random_number1} {random_operator} {random_number2}')
-    return(question, answer, MANUAL)
+    return(question, answer)
