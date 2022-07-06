@@ -5,6 +5,8 @@ MAX_NUMBER = 100
 
 
 def is_prime(random_number):
+    if random_number < 2:
+        return False
     for i in range(2, random_number):
         if random_number % i == 0:
             return False
