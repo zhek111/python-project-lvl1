@@ -2,14 +2,22 @@
 [![Actions Status](https://github.com/zhek111/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/zhek111/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/39c9c5dcc5d81130b121/maintainability)](https://codeclimate.com/github/zhek111/python-project-lvl1/maintainability)
 
+## Instructions
+
+Try playing math mini games. Each game has its own instructions inside.
+
 ### Installation
 
-clone the repository
+
+# Clone the repository
+
 
 ```bash
 $ git clone https://github.com/zhek111/python-project-lvl1
 ```
-Use make (Makefile)
+
+Use make (Makefile):
+
 
 make install
 
@@ -43,7 +51,7 @@ To start the game, run either(for example):
 brain-games
 ```
 
-You can also run other games
+# You can also run other games
 
 ```bash
 brain-even
