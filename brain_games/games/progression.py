@@ -22,4 +22,4 @@ def generate_round_game():
     for number in progression:
         question = question + str(number) + " "
     question = question.strip()
-    return(question, answer)
+    return(str(question), str(answer))

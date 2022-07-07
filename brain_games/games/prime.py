@@ -17,4 +17,4 @@ def generate_round_game():
     random_number = randint(MIN_NUMBER, MAX_NUMBER)
     question = random_number
     answer = is_prime(random_number) and 'yes' or 'no'
-    return(question, answer)
+    return(str(question), str(answer))

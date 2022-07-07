@@ -10,4 +10,4 @@ def generate_round_game():
     random_number2 = randint(MIN_NUMBER, MAX_NUMBER)
     question = (f'{random_number1} {random_number2}')
     answer = gcd(random_number1, random_number2)
-    return(question, answer)
+    return(str(question), str(answer))

@@ -8,4 +8,4 @@ def generate_round_game():
     random_number = randint(MIN_NUMBER, MAX_NUMBER)
     question = random_number
     answer = random_number % 2 == 0 and 'yes' or 'no'
-    return(question, answer)
+    return(str(question), str(answer))
